@@ -1,2 +1,6 @@
 # Confounder-Misclassification
 Using probabilistic sensitivity analyses to adjust for misclassified binary confounders
+
+Accurate measurement of the exposure, outcome and relevant confounding variables is necessary to assess causal relationships. However, all epidemiologic studies are susceptible to some degree of measurement error in capturing important prognostic variables. Statistical model adjustment using imperfectly measured confounders has been shown to remove only part of the confounding effect, most important when studying an exposure that has a modest effect on the outcome in the presence of confounders.
+
+This SAS Macro used a probabilistic method for conducting sensitivity analyses to produce a "Percent Adjustment" factor that corrects for the effect of residual confounding due to measurement error of confounding variables. The Percent Adjustment is the amount of confounding bias removed using the misclassified confounders relative to the total confounding bias. Our method uses Monto Carlo simulations to estimate the Percent Adjustment and corrects the observed exposure-outcome odds ratio (OR). The user specifies ranges of sensitivity and specificity parameters for each confounder to yield confidence intervals for the exposure-outcome OR that incorporates both random and systematic error.
