@@ -186,7 +186,7 @@ the Percent Adjustment and corrects the observed exposure-outcome odds ratio (OR
 parameters for each confounder to yield confidence intervals for the exposure-outcome OR that incorporates both random and systematic error.
 
 */
-%include "C:\Users\Admin\...\Correction for non-differential misclassification.sas"; /* REPLACE ME WITH A VALID PATH*/
+%include "C:\Users\Admin\...\misclass.sas"; /* REPLACE ME WITH A VALID PATH*/
 %Misclassification (
 	inset=inset,
 	exp=exposure_sim,
