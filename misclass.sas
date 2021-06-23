@@ -1,9 +1,28 @@
 *****     delete existing datasets from previous runs     *****
 **************************************************************;
 %Macro Misclassification (
-			libname, inset, exp, depend, print_plots, indep, N_Misc_var, 
-			TOTALREPS, startover,
+			libname, /* Specify the path to the folder that contains the "inset" dataset on your computer.*/
+			inset, /* Specify the name of the dataset on which to perform the analysis. This parameter must be specified, and the appropriate dataset must exist in the specified library.  */
+			exp, /* The exposure variable must be specified and exist in the "inset" dataset. */
+			depend, /* The dependent variable must be specified and exist in the "inset" dataset. */
+			print_plots, /* The user can request that the distribution of the specificity and specificity for each confounder be plotted. The default value is yes (without quotations) to print all plots.
 
+			Possible values: yes, no
+			*/ 
+			indep, /*This parameter specifies the variables entered into the logistic regression model for adjustment. The adjustment variables must include at least all misclassified variables. The macro will stop executing if the user enters the "exp" or "depend" variable(s) in the "indep" string. No quotations or commas are needed to separate variables. If the indep string is not specified, the macro will by default enter all misclassified variables.  */
+			N_Misc_var, /* The user must specify the number of misclassified confounding variables (i.e., a number between 1 and 20).*/
+			TOTALREPS, /*The user can specify the number of iterations. If not specified, the macro will iterate 1000 times.*/
+			startover, /* The user can request that all existing datasets generated from previous runs be deleted. The default value is no (without quotations); that is, all new observations will be appended to the existing datasets.
+
+Possible values: yes, no
+*/
+
+			/* Here the user defines which variables are misclassified. The SAS macro can handle up to 20 misclassified variables. Variable1 parameter is required, but the remaining parameters are optional.*/
+			/* Sens_minX & Spec_minX:  The user must specify the minimum sensitivity and specificity parameter for each misclassified variable. */
+			/* Sens_mod_X to Spec_mod_X: The user can specify the first mode for the sensitivity and specificity parameters for each misclassified variable. If the first mode is not specified, the parameter distribution is assumed to be uniform.*/
+			/* Sens_mod2_X to Spc_mod_X: The user can specify a second mode for the sensitivity and specificity parameters for each misclassified variable. If the first mode is specified and the second mode is not specified, then the parameter distribution is assumed to be triangular. If both the first and second modes are specified and the second mode is greater than the first mode, then the parameter distribution is assumed to be trapezoidal.*/
+			/* Sens_maxX to Spec_maxX: The user must specify the maximum sensitivity and specificity parameter for each misclassified variable. */
+			
 			Variable1, 	Sens_min1, sens_mod_1, sens_mod2_1, Sens_max1,
 			spec_min1, spec_mod_1, spec_mod2_1, spec_max1,
 
