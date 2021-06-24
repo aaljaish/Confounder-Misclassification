@@ -1,4 +1,4 @@
-# Confounder-Misclassification
+# Confounder-Misclassification 
 Using probabilistic sensitivity analyses to adjust for misclassified binary confounders
 
 Accurate measurement of the exposure, outcome and relevant confounding variables is necessary to assess causal relationships. However, all epidemiologic studies are susceptible to some degree of measurement error in capturing important prognostic variables. Statistical model adjustment using imperfectly measured confounders has been shown to remove only part of the confounding effect, most important when studying an exposure that has a modest effect on the outcome in the presence of confounders.
