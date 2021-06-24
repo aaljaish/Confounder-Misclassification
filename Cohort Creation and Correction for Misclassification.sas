@@ -143,7 +143,7 @@ run;
 			if &&Var&i=1 then
 				&&Var&i.._misc=RAND("Bernoulli", &&sens&i);
 			else &&Var&i.._misc=RAND("Bernoulli", 1-&&spec&i);
-		run;
+		run; 
 
 	%end;
 %mend;
