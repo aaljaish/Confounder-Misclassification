@@ -23,36 +23,26 @@ Possible values: yes, no
 			/* Sens_mod2_X to Spc_mod_X: The user can specify a second mode for the sensitivity and specificity parameters for each misclassified variable. If the first mode is specified and the second mode is not specified, then the parameter distribution is assumed to be triangular. If both the first and second modes are specified and the second mode is greater than the first mode, then the parameter distribution is assumed to be trapezoidal.*/
 			/* Sens_maxX to Spec_maxX: The user must specify the maximum sensitivity and specificity parameter for each misclassified variable. */
 			
-			Variable1, 	Sens_min1, sens_mod_1, sens_mod2_1, Sens_max1,
-			spec_min1, spec_mod_1, spec_mod2_1, spec_max1,
-
-			Variable2, 	Sens_min2, sens_mod_2, sens_mod2_2, Sens_max2,
-			spec_min2, spec_mod_2, spec_mod2_2, spec_max2,
-
-			Variable3, 	Sens_min3, sens_mod_3, sens_mod2_3, Sens_max3,
-			spec_min3, spec_mod_3, spec_mod2_3, spec_max3,
-
-			Variable4, 	Sens_min4, sens_mod_4, sens_mod2_4, Sens_max4,
-			spec_min4, spec_mod_4, spec_mod2_4, spec_max4,
-
-			Variable5,	Sens_min5, sens_mod_5, sens_mod2_5, Sens_max5,
-			spec_min5, spec_mod_5, spec_mod2_5, spec_max5,
-
-			Variable6,	Sens_min6, sens_mod_6, sens_mod2_6, Sens_max6,
-			spec_min6, spec_mod_6, spec_mod2_6, spec_max6,
-
-			Variable7, 	Sens_min7, sens_mod_7, sens_mod2_7, Sens_max7,
-			spec_min7, spec_mod_7, spec_mod2_7, spec_max7, 
-
-			Variable8, Sens_min8, sens_mod_8, sens_mod2_8, Sens_max8,
-			spec_min8, spec_mod_8, spec_mod2_8, spec_max8,
-
-			Variable9,	Sens_min9, sens_mod_9, sens_mod2_9, Sens_max9,
-			spec_min9, spec_mod_9, spec_mod2_9, spec_max9,
-
-			Variable10, Sens_min10, sens_mod_10, sens_mod2_10, Sens_max10,
-			spec_min10, spec_mod_10, spec_mod2_10, spec_max10 
-
+			Variable1,  Sens_min1,  sens_mod_1,  sens_mod2_1,  Sens_max1,  spec_min1,  spec_mod_1,  spec_mod2_1,  spec_max1,
+			Variable2,  Sens_min2,  sens_mod_2,  sens_mod2_2,  Sens_max2,  spec_min2,  spec_mod_2,  spec_mod2_2,  spec_max2,
+			Variable3,  Sens_min3,  sens_mod_3,  sens_mod2_3,  Sens_max3,  spec_min3,  spec_mod_3,  spec_mod2_3,  spec_max3,
+			Variable4,  Sens_min4,  sens_mod_4,  sens_mod2_4,  Sens_max4,  spec_min4,  spec_mod_4,  spec_mod2_4,  spec_max4,
+			Variable5,  Sens_min5,  sens_mod_5,  sens_mod2_5,  Sens_max5,  spec_min5,  spec_mod_5,  spec_mod2_5,  spec_max5,
+			Variable6,  Sens_min6,  sens_mod_6,  sens_mod2_6,  Sens_max6,  spec_min6,  spec_mod_6,  spec_mod2_6,  spec_max6,
+			Variable7,  Sens_min7,  sens_mod_7,  sens_mod2_7,  Sens_max7,  spec_min7,  spec_mod_7,  spec_mod2_7,  spec_max7, 
+			Variable8,  Sens_min8,  sens_mod_8,  sens_mod2_8,  Sens_max8,  spec_min8,  spec_mod_8,  spec_mod2_8,  spec_max8,
+			Variable9,  Sens_min9,  sens_mod_9,  sens_mod2_9,  Sens_max9,  spec_min9,  spec_mod_9,  spec_mod2_9,  spec_max9,
+			Variable10, Sens_min10, sens_mod_10, sens_mod2_10, Sens_max10, spec_min10, spec_mod_10, spec_mod2_10, spec_max10,
+			Variable11, Sens_min11, sens_mod_11, sens_mod2_11, Sens_max11, spec_min11, spec_mod_11, spec_mod2_11, spec_max11,
+			Variable12, Sens_min12, sens_mod_12, sens_mod2_12, Sens_max12, spec_min12, spec_mod_12, spec_mod2_12, spec_max12,
+			Variable13, Sens_min13, sens_mod_13, sens_mod2_13, Sens_max13, spec_min13, spec_mod_13, spec_mod2_13, spec_max13,
+			Variable14, Sens_min14, sens_mod_14, sens_mod2_14, Sens_max14, spec_min14, spec_mod_14, spec_mod2_14, spec_max14,
+			Variable15, Sens_min15, sens_mod_15, sens_mod2_15, Sens_max15, spec_min15, spec_mod_15, spec_mod2_15, spec_max15,
+			Variable16, Sens_min16, sens_mod_16, sens_mod2_16, Sens_max16, spec_min16, spec_mod_16, spec_mod2_16, spec_max16,
+			Variable17, Sens_min17, sens_mod_17, sens_mod2_17, Sens_max17, spec_min17, spec_mod_17, spec_mod2_17, spec_max17,
+			Variable18, Sens_min18, sens_mod_18, sens_mod2_18, Sens_max18, spec_min18, spec_mod_18, spec_mod2_18, spec_max18,
+			Variable19, Sens_min19, sens_mod_19, sens_mod2_19, Sens_max19, spec_min19, spec_mod_19, spec_mod2_19, spec_max19,
+			Variable20, Sens_min20, sens_mod_20, sens_mod2_20, Sens_max20, spec_min20, spec_mod_20, spec_mod2_20, spec_max20 
 			);
 	/*Change SAS System Options for print the log*/
 	options nosource nosource2 noserror nonotes;
