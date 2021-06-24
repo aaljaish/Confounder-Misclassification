@@ -69,7 +69,7 @@ Possible values: yes, no
 	/*ERROR CHECKING MACRO */
 	/*******************************/
 	%checkerr;
-	ods select none;
+	ods select none; 
 
 	%if &quitmac=1 %then
 		%do;
