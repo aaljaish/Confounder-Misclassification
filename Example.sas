@@ -186,6 +186,9 @@ the Percent Adjustment and corrects the observed exposure-outcome odds ratio (OR
 parameters for each confounder to yield confidence intervals for the exposure-outcome OR that incorporates both random and systematic error.
 
 */
+
+/* The misclass.sas macro can be downloaded from https://github.com/aaljaish/Confounder-Misclassification/blob/main/misclass.sas */
+
 %include "C:\Users\Admin\...\misclass.sas"; /* REPLACE ME WITH A VALID PATH*/
 %Misclassification (
 	inset=inset,
