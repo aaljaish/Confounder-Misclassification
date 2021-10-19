@@ -37,7 +37,7 @@ ods exclude ModelInfo ResponseProfile ClassLevelInfo ConvergenceStatus FitStatis
 			NObs ParameterEstimates Association GoodnessOfFit;             /* suspend all open destinations */
 proc logistic data=x1;
 class lbw (ref="0") FreqSmoker (ref="0") Married (ref="0") boy (ref="0") WtGain (ref="1");
-model lbw=FreqSmoker boy Married WtGain;
+model lbw=FreqSmoker Married WtGain;
 run;
 ods exclude none;            /* or use the %ODSOn macro */
 
