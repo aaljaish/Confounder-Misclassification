@@ -19,7 +19,7 @@ FreqSmoker=CigsPerDay ge 5;
 
 * Creating a binary confounder variable;
 * A mom gained at least 0 pounds;
-WtGain=MomWtGain GE 1;
+WtGain=MomWtGain GE 10;
 
 /*Misclassifying the Married variable with 75% Sensitivity and 90% Specificity*/
 if Married=1 then Married_mis=rand('Uniform')<0.75;
